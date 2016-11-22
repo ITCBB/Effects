@@ -19,13 +19,20 @@ namespace Organon.XForms.Effects.Droid.Effects
     /// </summary>
     public class ChangeColorSwitchEffect : PlatformEffect
     {
+        private string _trueColor;
+        private string _falseColor;
+
         protected override void OnAttached()
         {
             if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.JellyBean)
             {
+                _trueColor = (string)Element.GetValue(ChangeColorEffect.TrueColorProperty);
+                _falseColor = (string)Element.GetValue(ChangeColorEffect.FalseColorProperty);
+
                 ((SwitchCompat)Control).CheckedChange += OnCheckedChange;
-                ((SwitchCompat)Control).ThumbDrawable.SetColorFilter(Android.Graphics.Color.Green, PorterDuff.Mode.Multiply);
-                //((SwitchCompat)Control).TrackDrawable.SetColorFilter(Android.Graphics.Color.Green, PorterDuff.Mode.Multiply);
+
+                //Supported formats for Parse are: #RRGGBB #AARRGGBB 'red', 'blue', 'green', 'black', 'white', 'gray', 'cyan', 'magenta', 'yellow', 'lightgray', 'darkgray' 
+                ((SwitchCompat)Control).ThumbDrawable.SetColorFilter(Android.Graphics.Color.ParseColor(_falseColor), PorterDuff.Mode.Multiply);
             }
 
             //TODO: Glenn - From lollipop mr1 you can also use the TintList instead of working with events... not sure what the best approach is
@@ -53,12 +60,12 @@ namespace Organon.XForms.Effects.Droid.Effects
         {
             if (checkedChangeEventArgs.IsChecked)
             {
-                ((SwitchCompat) Control).ThumbDrawable.SetColorFilter(Android.Graphics.Color.Yellow, PorterDuff.Mode.Multiply);
+                ((SwitchCompat) Control).ThumbDrawable.SetColorFilter(Android.Graphics.Color.ParseColor(_trueColor), PorterDuff.Mode.Multiply);
                 //((SwitchCompat) Control).TrackDrawable.SetColorFilter(Android.Graphics.Color.Green, PorterDuff.Mode.Multiply);
             }
             else
             {
-                ((SwitchCompat)Control).ThumbDrawable.SetColorFilter(Android.Graphics.Color.Green, PorterDuff.Mode.Multiply);
+                ((SwitchCompat)Control).ThumbDrawable.SetColorFilter(Android.Graphics.Color.ParseColor(_falseColor), PorterDuff.Mode.Multiply);
                 //((SwitchCompat)Control).TrackDrawable.SetColorFilter(Android.Graphics.Color.Green, PorterDuff.Mode.Multiply);
             }
         }
