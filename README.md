@@ -7,9 +7,9 @@ Included effects:
 
 | Effect                     | Description | iOS | Android | UWP |
 |----------------------------|-------------|-----|---------|-----|
-| CapitalizeKeyboardEffect | Enforces caps on the keyboard for an Entry | x | x | Todo |
+| CapitalizeKeyboardEffect | Enforces caps on the keyboard for an Entry | x | x | x |
 | ClearEntryEffect | Adds a clear button to an Entry | x | x | - |
-| RemoveBorderEffect | Removes the border from an Entry on iOS | x | - | Todo |
+| RemoveBorderEffect | Removes the border from an Entry on iOS | x | - | x |
 | RemoveEntryLineEffect | Removes the underline from an Entry on Android | - | x | - |
 | ViewBlurEffect | Blur any view | Todo | Todo | x |
 
