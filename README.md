@@ -40,3 +40,8 @@ from your AppDelegate. This ensures the assembly is loaded and the effects are a
 ![Android Effects](Media/AndroidEffects_thumb.gif)
 
 ![Android Effects](Media/SwitchColorEffectAndroid_thumb.gif)
+
+###### Samples UWP
+![UWP Blur Effect](Media/BlurEffectUWP_thumb.gif)
+
+![UWP Entry Effects](Media/EntryEffectsUWP_thumb.gif)
