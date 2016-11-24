@@ -5,53 +5,50 @@ namespace Organon.XForms.Effects
 {
     public static class ChangeColorEffect
     {
-        public static readonly BindableProperty FalseColorProperty = BindableProperty.CreateAttached("FalseColor", typeof(string), typeof(ChangeColorEffect), string.Empty, propertyChanged: OnColorChanged);
-        public static readonly BindableProperty TrueColorProperty = BindableProperty.CreateAttached("TrueColor", typeof(string), typeof(ChangeColorEffect), string.Empty, propertyChanged: OnColorChanged);
+        public static readonly BindableProperty FalseColorProperty = BindableProperty.CreateAttached ("FalseColor", typeof (Color?), typeof (ChangeColorEffect), Color.Transparent, propertyChanged: OnColorChanged);
+        public static readonly BindableProperty TrueColorProperty = BindableProperty.CreateAttached ("TrueColor", typeof (Color?), typeof (ChangeColorEffect), Color.Transparent, propertyChanged: OnColorChanged);
 
-        private static void OnColorChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void OnColorChanged (BindableObject bindable, object oldValue, object newValue)
         {
             var control = bindable as Switch;
             if (control == null)
                 return;
 
-            string color = (string)newValue;
+            var color = (Color)newValue;
 
-            var attachedEffect = control.Effects.FirstOrDefault(e => e is ChangeColorSwitchEffect);
-            if (!string.IsNullOrEmpty(color) && attachedEffect == null)
-            {
-                control.Effects.Add(new ChangeColorSwitchEffect());
-            }
-            else if (string.IsNullOrEmpty(color) && attachedEffect != null)
-            {
-                control.Effects.Remove(attachedEffect);
+            var attachedEffect = control.Effects.FirstOrDefault (e => e is ChangeColorSwitchEffect);
+            if (color != Color.Transparent && attachedEffect == null) {
+                control.Effects.Add (new ChangeColorSwitchEffect ());
+            } else if (color == Color.Transparent && attachedEffect != null) {
+                control.Effects.Remove (attachedEffect);
             }
         }
 
-        public static string GetFalseColor(BindableObject view)
+        public static Color GetFalseColor (BindableObject view)
         {
-            return (string)view.GetValue(FalseColorProperty);
+            return (Color)view.GetValue (FalseColorProperty);
         }
 
-        public static void SetFalseColor(BindableObject view, string color)
+        public static void SetFalseColor (BindableObject view, string color)
         {
-            view.SetValue(FalseColorProperty, color);
+            view.SetValue (FalseColorProperty, color);
         }
 
-        public static string GetTrueColor(BindableObject view)
+        public static Color GetTrueColor (BindableObject view)
         {
-            return (string)view.GetValue(TrueColorProperty);
+            return (Color)view.GetValue (TrueColorProperty);
         }
 
-        public static void SetTrueColor(BindableObject view, string color)
+        public static void SetTrueColor (BindableObject view, Color color)
         {
-            view.SetValue(TrueColorProperty, color);
+            view.SetValue (TrueColorProperty, color);
         }
 
     }
 
     public class ChangeColorSwitchEffect : RoutingEffect
     {
-        public ChangeColorSwitchEffect() : base("Organon.Effects.ChangeColorSwitchEffect")
+        public ChangeColorSwitchEffect () : base ("Organon.Effects.ChangeColorSwitchEffect")
         {
         }
     }
