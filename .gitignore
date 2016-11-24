@@ -12,3 +12,5 @@ Source/.droidres/.organon.xforms.sampleapp.droidres.db
 *.db
 
 *.nupkg
+
+Source/Organon.XForms.Effects/Organon.XForms.Effects.Droid/Resources/Resource.Designer.cs
