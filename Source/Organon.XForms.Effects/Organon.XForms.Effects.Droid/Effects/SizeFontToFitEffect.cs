@@ -5,34 +5,32 @@ using Android.Runtime;
 using Android.Widget;
 using Android.Graphics;
 using Android.Util;
+using Android.Content;
 
 [assembly: ExportEffect(typeof(SizeFontToFitEffect), nameof(SizeFontToFitEffect))]
 
 namespace Organon.XForms.Effects.Droid.Effects
 {
-    class RefitTextOnLayoutChangeListener : Java.Lang.Object, Android.Views.View.IOnLayoutChangeListener
+    class ShrinkTextOnLayoutChangeListener : Java.Lang.Object, Android.Views.View.IOnLayoutChangeListener
     {
-        private const string TextMeasure = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        private const double TextHeightScale = 0.9;
+        private const string TextMeasure = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         private const float Threshold = 0.5f; // How close we have to be
 
         private readonly TextView _textView;
 
-        public RefitTextOnLayoutChangeListener(TextView textView) : base()
+        public ShrinkTextOnLayoutChangeListener(TextView textView) : base()
         {
             _textView = textView;
         }
 
         public void OnLayoutChange(Android.Views.View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom)
         {
-            if (_textView.Width <= 0 || _textView.Height <= 0)
-                return;
+            if (_textView.Width <= 0 || _textView.Height <= 0) return;
+            
+            var hi = ConvertSpToPixels(_textView.TextSize, _textView.Context);
+            var lo = 1f;
 
-            var hi = 200f;
-            var lo = 2f;
-
-            var paint = new Paint();
-            paint.Set(_textView.Paint);
+            var paint = new Paint(_textView.Paint);
             var bounds = new Rect();
 
             while ((hi - lo) > Threshold)
@@ -41,7 +39,7 @@ namespace Organon.XForms.Effects.Droid.Effects
                 paint.TextSize = size;
                 paint.GetTextBounds(TextMeasure, 0, TextMeasure.Length, bounds);
 
-                if (paint.MeasureText(_textView.Text) >= _textView.Width || bounds.Height() >= _textView.Height * TextHeightScale)
+                if (paint.MeasureText(_textView.Text) >= _textView.Width || bounds.Height() >= _textView.Height)
                     hi = size; // too big
                 else
                     lo = size; // too small
@@ -49,18 +47,21 @@ namespace Organon.XForms.Effects.Droid.Effects
 
             _textView.SetTextSize(ComplexUnitType.Px, lo);
         }
+
+        private static float ConvertSpToPixels(float sp, Context context) => TypedValue.ApplyDimension(ComplexUnitType.Px, sp, context.Resources.DisplayMetrics);
     }
+
 
     [Preserve(AllMembers = true)]
     public class SizeFontToFitEffect : PlatformEffect
     {
-        private RefitTextOnLayoutChangeListener _listener;
+        private ShrinkTextOnLayoutChangeListener _listener;
 
         protected override void OnAttached()
         {
             var textView = Control as TextView;
             if (textView != null)
-                textView.AddOnLayoutChangeListener(_listener = new RefitTextOnLayoutChangeListener(textView));
+                textView.AddOnLayoutChangeListener(_listener = new ShrinkTextOnLayoutChangeListener(textView));
         }
 
         protected override void OnDetached()

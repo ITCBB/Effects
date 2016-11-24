@@ -11,6 +11,11 @@
                     <effects:SizeFontToFitEffect />
                 </Label.Effects>
             </Label>
+            <Label Text="This is a short label">
+                <Label.Effects>
+                    <effects:SizeFontToFitEffect />
+                </Label.Effects>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
