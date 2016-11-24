@@ -24,5 +24,10 @@ namespace Organon.XForms.SampleApp.Views
         {
             Navigation.PushAsync(new SwitchPage());
         }
+
+        private void OnLabelButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new LabelPage());
+        }
     }
 }

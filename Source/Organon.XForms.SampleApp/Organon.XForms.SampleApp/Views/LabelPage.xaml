@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="clr-namespace:Organon.XForms.Effects;assembly=Organon.XForms.Effects"          
+		     x:Class="Organon.XForms.SampleApp.Views.LabelPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="SizeFontToFitEffect"/>
+            <Label Text="This is a really, really long sentance that will get shrunk to fit">
+                <Label.Effects>
+                    <effects:SizeFontToFitEffect />
+                </Label.Effects>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
