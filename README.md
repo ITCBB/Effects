@@ -25,8 +25,9 @@ Organon.XForms.Effects.iOS.iOSEffects.Init();
 
 from your AppDelegate. This ensures the assembly is loaded and the effects are available.
 
-###### Samples
+###### Samples iOS
 
-![ClearEntryEffect and CapitalizeKeyboardEffect](Media/ClearEntryAndAllCaps_thumb.gif) ![RemoveBorderEffect](Media/NoBorders_thumb.gif)
+![ClearEntryEffect and CapitalizeKeyboardEffect](Media/ClearEntryAndAllCaps_thumb.gif) ![RemoveBorderEffect](Media/NoBorders_thumb.gif) ![BlurEffect](Media/BlurEffectiOS_thumb.gif)
 
+###### Samples Android
 ![Android Effects](Media/AndroidEffects_thumb.gif)
