@@ -3,6 +3,7 @@ using Android.App;
 using Android.Content.Res;
 using Android.Graphics;
 using Android.Graphics.Drawables;
+using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Widget;
 using Organon.XForms.Effects.Droid.Effects;
@@ -17,6 +18,7 @@ namespace Organon.XForms.Effects.Droid.Effects
     /// <summary>
     /// http://stackoverflow.com/questions/11253512/change-on-color-of-a-switch
     /// </summary>
+    [Preserve(AllMembers = true)]
     public class ChangeColorSwitchEffect : PlatformEffect
     {
         private string _trueColor;

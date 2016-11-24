@@ -8,7 +8,7 @@ using Foundation;
 
 namespace Organon.XForms.Effects.iOS.Effects
 {
-    [Preserve]
+    [Preserve(AllMembers = true)]
 	public class RemoveBorderEffect : PlatformEffect
 	{
         private UITextBorderStyle _old;

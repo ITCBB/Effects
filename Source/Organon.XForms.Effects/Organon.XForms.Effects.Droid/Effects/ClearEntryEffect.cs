@@ -1,3 +1,4 @@
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Organon.XForms.Effects.Droid.Effects;
@@ -7,6 +8,7 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportEffect(typeof(ClearEntryEffect), nameof(ClearEntryEffect))]
 namespace Organon.XForms.Effects.Droid.Effects
 {
+    [Preserve(AllMembers = true)]
     public class ClearEntryEffect : PlatformEffect
     {
         protected override void OnAttached()
@@ -27,7 +29,7 @@ namespace Organon.XForms.Effects.Droid.Effects
         }
     }
 
-    public class OnDrawableTouchListener : Java.Lang.Object, Android.Views.View.IOnTouchListener
+    class OnDrawableTouchListener : Java.Lang.Object, Android.Views.View.IOnTouchListener
     {
         public bool OnTouch(Android.Views.View v, MotionEvent e)
         {

@@ -8,7 +8,7 @@ using Foundation;
 
 namespace Organon.XForms.Effects.iOS.Effects
 {
-    [Preserve]
+    [Preserve(AllMembers = true)]
 	public class CapitalizeKeyboardEffect : PlatformEffect
 	{
         private UITextAutocapitalizationType _old;
