@@ -102,6 +102,7 @@
     <Compile Include="Effects\CapitalizeKeyboardEffect.cs" />
     <Compile Include="Effects\RemoveBorderEffect.cs" />
     <Compile Include="Effects\DisableAutoCorrectEffect.cs" />
+    <Compile Include="Effects\SizeFontToFitEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
