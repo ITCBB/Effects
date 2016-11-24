@@ -11,6 +11,7 @@ Included effects:
 | ClearEntryEffect | Adds a clear button to an Entry | x | x | - |
 | RemoveBorderEffect | Removes the border from an Entry on iOS | x | - | Todo |
 | RemoveEntryLineEffect | Removes the underline from an Entry on Android | - | x | - |
+| DisableAutoCorrectEffect | Disables auto-correction and entry suggestions from an entry | x | x | - |
 
 
 ###### iOS
