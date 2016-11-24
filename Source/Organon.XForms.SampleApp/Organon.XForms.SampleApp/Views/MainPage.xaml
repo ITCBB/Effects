@@ -36,6 +36,12 @@
         <effects:RemoveEntryLineEffect />
          </Entry.Effects>
       </Entry>
+      <Label Text="DisableAutoCorrectionEffect" Margin="0,20,0,0"/>
+      <Entry Placeholder="start typing..." VerticalOptions="Start">
+         <Entry.Effects>
+        <effects:DisableAutoCorrectEffect />
+         </Entry.Effects>
+      </Entry>
 	</StackLayout>
   
 </ContentPage>

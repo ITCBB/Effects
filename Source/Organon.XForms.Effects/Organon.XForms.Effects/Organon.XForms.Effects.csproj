@@ -40,6 +40,7 @@
     <Compile Include="RemoveEntryLineEffect.cs" />
     <Compile Include="CapitializeKeyboardEffect.cs" />
     <Compile Include="RemoveBorderEffect.cs" />
+    <Compile Include="DisableAutoCorrectEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

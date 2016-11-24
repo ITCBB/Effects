@@ -59,6 +59,7 @@
     <Compile Include="Effects\CapitalizeKeyboardEffect.cs" />
     <Compile Include="Effects\RemoveBorderEffect.cs" />
     <Compile Include="Effects.cs" />
+    <Compile Include="Effects\DisableAutoCorrectEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Organon.XForms.Effects\Organon.XForms.Effects.csproj">
