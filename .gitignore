@@ -10,3 +10,5 @@ Source/.droidres/.organon.xforms.sampleapp.droidres.db
 *.userprefs
 
 *.db
+
+*.nupkg
