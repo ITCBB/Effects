@@ -16,7 +16,7 @@ namespace Organon.XForms.Effects.Droid.Effects
             if (control != null)
             {
                 var effect = (XForms.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is XForms.Effects.MultiLineLabelEffect);
-                if (effect != null)
+                if (effect != null && effect.Lines > 0)
                 {
                     control.SetSingleLine(false);
                     control.SetLines(effect.Lines);
