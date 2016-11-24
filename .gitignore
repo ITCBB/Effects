@@ -10,3 +10,9 @@ Source/.droidres/.organon.xforms.sampleapp.droidres.db
 *.userprefs
 
 *.db
+
+*.nupkg
+
+Source/Organon.XForms.Effects/Organon.XForms.Effects.Droid/Resources/Resource.Designer.cs
+
+Source/Organon.XForms.SampleApp/Organon.XForms.SampleApp.Droid/Resources/Resource.Designer.cs

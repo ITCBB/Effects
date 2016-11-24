@@ -12,9 +12,10 @@
   </ContentPage.Padding>
   
 	<StackLayout Padding="20">
-    <Button x:Name="EntryButton" Text="Entry effects" Clicked="OnEntryButtonClicked" />
-    <Button x:Name="ViewButton" Text="View effects" Clicked="OnViewButtonClicked" />
-    <Button x:Name="SwitchButton" Text="Switch effects" Clicked="OnSwitchButtonClicked" />
+        <Button x:Name="EntryButton" Text="Entry effects" Clicked="OnEntryButtonClicked" />
+        <Button x:Name="ViewButton" Text="View effects" Clicked="OnViewButtonClicked" />
+        <Button x:Name="SwitchButton" Text="Switch effects" Clicked="OnSwitchButtonClicked" />
+        <Button x:Name="LabelButton" Text="Label effects" Clicked="OnLabelButtonClicked" />
 	</StackLayout>
   
 </ContentPage>

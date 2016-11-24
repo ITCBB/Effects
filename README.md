@@ -14,6 +14,7 @@ Included effects:
 | DisableAutoCorrectEffect | Disables auto-correction and entry suggestions from an entry | x | x | - |
 | ViewBlurEffect | Blur any view | x | Todo | x |
 | ChangeColorSwitchEffect | Change colors of switch | Todo | x | Todo |
+| SizeFontToFitEffect | Shrinks fonts to fit | x | x | Todo |
 
 ###### iOS
 
@@ -27,7 +28,11 @@ from your AppDelegate. This ensures the assembly is loaded and the effects are a
 
 ###### Samples iOS
 
-![ClearEntryEffect and CapitalizeKeyboardEffect](Media/ClearEntryAndAllCaps_thumb.gif) ![RemoveBorderEffect](Media/NoBorders_thumb.gif) ![BlurEffect](Media/BlurEffectiOS_thumb.gif)
+![ClearEntryEffect and CapitalizeKeyboardEffect](Media/ClearEntryAndAllCaps_thumb.gif)
+
+![RemoveBorderEffect](Media/NoBorders_thumb.gif)
+
+![BlurEffect](Media/BlurEffectiOS_thumb.gif)
 
 ###### Samples Android
 ![Android Effects](Media/AndroidEffects_thumb.gif)
