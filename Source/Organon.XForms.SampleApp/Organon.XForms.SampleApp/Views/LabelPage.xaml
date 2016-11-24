@@ -16,6 +16,13 @@
                     <effects:SizeFontToFitEffect />
                 </Label.Effects>
             </Label>
+            <Label Text="MultiLineLabelEffect" Margin="0,20,0,0" />
+            <Label Text="This is a really, really, really long sentence that will be displayed with maximum 2 lines and not any further! So we limit the total amount and clipp the text if needed"
+                   LineBreakMode="TailTruncation">
+                <Label.Effects>
+                    <effects:MultiLineLabelEffect Lines="2" />
+                </Label.Effects>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
