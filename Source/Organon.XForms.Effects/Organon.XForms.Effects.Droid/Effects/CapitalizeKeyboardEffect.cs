@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Organon.XForms.Effects.Droid.Effects
 {
-    [Preserve]
+    [Preserve(AllMembers = true)]
 	public class CapitalizeKeyboardEffect : PlatformEffect
 	{
         private InputTypes _old;

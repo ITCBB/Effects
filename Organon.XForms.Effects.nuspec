@@ -8,6 +8,7 @@
        <owners>Glenn Versweyveld, Matthew Robbins, Jim Bennett</owners>
        <projectUrl>https://github.com/OrganonKit/Organon</projectUrl>
        <licenseUrl>https://github.com/OrganonKit/Organon/blob/master/LICENSE</licenseUrl>
+       <iconUrl>https://github.com/OrganonKit/Organon/blob/master/Media/OrganonLogo.64x64.png</iconUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
          Organon Effects Library for Xamarin.Forms

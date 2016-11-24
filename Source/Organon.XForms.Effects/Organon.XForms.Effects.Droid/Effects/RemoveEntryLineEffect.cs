@@ -1,6 +1,7 @@
 using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Graphics.Drawables.Shapes;
+using Android.Runtime;
 using Organon.XForms.Effects.Droid.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -8,6 +9,7 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportEffect(typeof(RemoveEntryLineEffect), nameof(RemoveEntryLineEffect))]
 namespace Organon.XForms.Effects.Droid.Effects
 {
+    [Preserve(AllMembers = true)]
     public class RemoveEntryLineEffect : PlatformEffect
     {
         protected override void OnAttached()

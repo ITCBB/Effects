@@ -7,7 +7,7 @@ using Android.Runtime;
 
 namespace Organon.XForms.Effects.Droid.Effects
 {
-    [Preserve]
+    [Preserve(AllMembers = true)]
     public class RemoveBorderEffect : PlatformEffect
     {
         protected override void OnAttached()
