@@ -13,7 +13,7 @@ Included effects:
 | RemoveEntryLineEffect | Removes the underline from an Entry on Android | - | x | - |
 | DisableAutoCorrectEffect | Disables auto-correction and entry suggestions from an entry | x | x | - |
 | ViewBlurEffect | Blur any view | x | Todo | x |
-| ChangeColorSwitchEffect | Change colors of switch | Todo | x | Todo |
+| ChangeColorSwitchEffect | Change colors of switch | x | x | Todo |
 | SizeFontToFitEffect | Shrinks fonts to fit | x | x | Todo |
 
 ###### iOS
@@ -34,5 +34,9 @@ from your AppDelegate. This ensures the assembly is loaded and the effects are a
 
 ![BlurEffect](Media/BlurEffectiOS_thumb.gif)
 
+![SwitchColorEffect](Media/SwitchColorEffectiOS_thumb.gif)
+
 ###### Samples Android
 ![Android Effects](Media/AndroidEffects_thumb.gif)
+
+![Android Effects](Media/SwitchColorEffectAndroid_thumb.gif)
