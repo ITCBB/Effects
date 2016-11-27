@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Effects\CapitalizeKeyboardEffect.cs" />
+    <Compile Include="Effects\MultiLineLabelEffect.cs" />
     <Compile Include="Effects\RemoveBorderEffect.cs" />
     <Compile Include="Effects\ViewBlurEffect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
