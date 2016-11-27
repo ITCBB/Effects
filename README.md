@@ -15,7 +15,7 @@ Included effects:
 | ViewBlurEffect | Blur any view | x | Todo | x |
 | ChangeColorSwitchEffect | Change colors of switch | x | x | Todo |
 | SizeFontToFitEffect | Shrinks fonts to fit | x | x | Todo |
-| MultiLineLabelEffect | Limit lines to given amount | x | x | Todo |
+| MultiLineLabelEffect | Limit lines to given amount | x | x | x |
 
 ###### iOS
 
