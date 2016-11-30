@@ -64,6 +64,7 @@
     <Compile Include="Effects\ViewBlurEffect.cs" />
     <Compile Include="Effects\SizeFontToFitEffect.cs" />
     <Compile Include="Effects\ChangeColorSwitchEffect.cs" />
+    <Compile Include="Effects\CustomFontEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Organon.XForms.Effects\Organon.XForms.Effects.csproj">

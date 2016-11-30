@@ -45,6 +45,7 @@
     <Compile Include="RemoveBorderEffect.cs" />
     <Compile Include="DisableAutoCorrectEffect.cs" />
     <Compile Include="SizeFontToFitEffect.cs" />
+    <Compile Include="CustomFontEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
