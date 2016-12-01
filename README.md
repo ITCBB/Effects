@@ -16,6 +16,7 @@ Included effects:
 | ChangeColorSwitchEffect | Change colors of switch | x | x | Todo |
 | SizeFontToFitEffect | Shrinks fonts to fit | x | x | Todo |
 | MultiLineLabelEffect | Limit lines to given amount | x | x | x |
+| CustomFontEffect | Custom font for a Label | x | x | Todo |
 
 ###### iOS
 
@@ -37,10 +38,14 @@ from your AppDelegate. This ensures the assembly is loaded and the effects are a
 
 ![SwitchColorEffect](Media/SwitchColorEffectiOS_thumb.gif)
 
+![LabelEffects](Media/LabelEffectsiOS_thumb.png)
+
 ###### Samples Android
 ![Android Effects](Media/AndroidEffects_thumb.gif)
 
 ![Android Effects](Media/SwitchColorEffectAndroid_thumb.gif)
+
+![LabelEffects](Media/LabelEffectsAndroid_thumb.png)
 
 ###### Samples UWP
 ![UWP Blur Effect](Media/BlurEffectUWP_thumb.gif)
