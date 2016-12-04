@@ -1,7 +1,4 @@
-![Organon logo](Media/OrganonLogoL.png)
-=======
-
-Organon is a library of Effects for Xamarin.Forms.
+FormsCommunityToolkit library of Effects for Xamarin.Forms.
 
 Included effects:
 
