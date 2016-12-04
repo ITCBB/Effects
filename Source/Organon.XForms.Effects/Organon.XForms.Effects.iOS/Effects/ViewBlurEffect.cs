@@ -1,13 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
-using Organon.XForms.Effects.iOS;
+using FormsCommunityToolkit.Effects.iOS;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportEffect (typeof (ViewBlurEffect), nameof (ViewBlurEffect))]
-namespace Organon.XForms.Effects.iOS
+namespace FormsCommunityToolkit.Effects.iOS
 {
     public class ViewBlurEffect : PlatformEffect
     {

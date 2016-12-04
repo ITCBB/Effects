@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using Android.Graphics;
 using Android.Widget;
-using Organon.XForms.Effects.Droid;
+using FormsCommunityToolkit.Effects.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportEffect (typeof (CustomFontEffect), nameof (CustomFontEffect))]
-namespace Organon.XForms.Effects.Droid
+namespace FormsCommunityToolkit.Effects.Droid
 {
     public class CustomFontEffect : PlatformEffect
     {
@@ -15,7 +15,7 @@ namespace Organon.XForms.Effects.Droid
             var control = Control as TextView;
 
             if (control != null) {
-                var effect = (XForms.Effects.CustomFontEffect)Element.Effects.FirstOrDefault (item => item is XForms.Effects.CustomFontEffect);
+                var effect = (FormsCommunityToolkit.Effects.CustomFontEffect)Element.Effects.FirstOrDefault (item => item is FormsCommunityToolkit.Effects.CustomFontEffect);
                 if (effect != null && !string.IsNullOrWhiteSpace (effect.FontPath)) {
 
                     var font = Typeface.CreateFromAsset (Forms.Context.Assets, effect.FontPath);

@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Organon.XForms.Effects.UWP.Effects;
+using FormsCommunityToolkit.Effects.UWP.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.UWP;
 
 [assembly: ExportEffect(typeof(MultiLineLabelEffect), nameof(MultiLineLabelEffect))]
-namespace Organon.XForms.Effects.UWP.Effects
+namespace FormsCommunityToolkit.Effects.UWP.Effects
 {
     public class MultiLineLabelEffect : PlatformEffect
     {
@@ -22,7 +22,7 @@ namespace Organon.XForms.Effects.UWP.Effects
                 _initialeLines = control.MaxLines;
                 _initialTextWrapping = control.TextWrapping;
 
-                var effect = (XForms.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is XForms.Effects.MultiLineLabelEffect);
+                var effect = (FormsCommunityToolkit.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is FormsCommunityToolkit.Effects.MultiLineLabelEffect);
                 if (effect != null && effect.Lines > 0)
                 {
                     control.MaxLines = effect.Lines;

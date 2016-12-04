@@ -1,12 +1,12 @@
 ﻿using Windows.UI.Xaml.Controls;
-using Organon.XForms.Effects.UWP.Effects;
+using FormsCommunityToolkit.Effects.UWP.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Platform.UWP;
 
 [assembly: ExportEffect(typeof(CapitalizeKeyboardEffect), nameof(CapitalizeKeyboardEffect))]
 
-namespace Organon.XForms.Effects.UWP.Effects
+namespace FormsCommunityToolkit.Effects.UWP.Effects
 {
     [Preserve]
     public class CapitalizeKeyboardEffect : PlatformEffect

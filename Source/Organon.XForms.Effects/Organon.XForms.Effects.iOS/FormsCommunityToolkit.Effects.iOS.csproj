@@ -8,9 +8,9 @@
     <ProjectGuid>{F09F8CAF-701A-4673-A880-1580ACCB926B}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Organon.XForms.Effects.iOS</RootNamespace>
+    <RootNamespace>FormsCommunityToolkit.Effects.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Organon.XForms.Effects.iOS</AssemblyName>
+    <AssemblyName>FormsCommunityToolkit.Effects.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -67,9 +67,9 @@
     <Compile Include="Effects\CustomFontEffect.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Organon.XForms.Effects\Organon.XForms.Effects.csproj">
+    <ProjectReference Include="..\Organon.XForms.Effects\FormsCommunityToolkit.Effects.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
-      <Name>Organon.XForms.Effects</Name>
+      <Name>FormsCommunityToolkit.Effects</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using Organon.XForms.Effects.Droid.Effects;
+using FormsCommunityToolkit.Effects.Droid.Effects;
 using Android.Runtime;
 using Android.Widget;
 using Android.Graphics;
@@ -9,7 +9,7 @@ using Android.Content;
 
 [assembly: ExportEffect(typeof(SizeFontToFitEffect), nameof(SizeFontToFitEffect))]
 
-namespace Organon.XForms.Effects.Droid.Effects
+namespace FormsCommunityToolkit.Effects.Droid.Effects
 {
     class ShrinkTextOnLayoutChangeListener : Java.Lang.Object, Android.Views.View.IOnLayoutChangeListener
     {

@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Contracts;
 using Xamarin.Forms;
 
-namespace Organon.XForms.Effects
+namespace FormsCommunityToolkit.Effects
 {
     public class MultiLineLabelEffect : RoutingEffect
     {

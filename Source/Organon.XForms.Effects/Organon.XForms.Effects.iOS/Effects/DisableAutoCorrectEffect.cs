@@ -1,5 +1,5 @@
 ﻿using System;
-using Organon.XForms.Effects.iOS.Effects;
+using FormsCommunityToolkit.Effects.iOS.Effects;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportEffect(typeof(DisableAutoCorrectEffect), nameof(DisableAutoCorrectEffect))]
 
-namespace Organon.XForms.Effects.iOS.Effects
+namespace FormsCommunityToolkit.Effects.iOS.Effects
 {
 	[Preserve]
 	public class DisableAutoCorrectEffect : PlatformEffect

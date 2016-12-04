@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
-using Organon.XForms.Effects.iOS.Effects;
+using FormsCommunityToolkit.Effects.iOS.Effects;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportEffect(typeof(MultiLineLabelEffect), nameof(MultiLineLabelEffect))]
-namespace Organon.XForms.Effects.iOS.Effects
+namespace FormsCommunityToolkit.Effects.iOS.Effects
 {
     public class MultiLineLabelEffect : PlatformEffect
     {
@@ -20,7 +20,7 @@ namespace Organon.XForms.Effects.iOS.Effects
             {
                 _initialeLines = control.Lines;
 
-                var effect = (XForms.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is XForms.Effects.MultiLineLabelEffect);
+                var effect = (FormsCommunityToolkit.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is FormsCommunityToolkit.Effects.MultiLineLabelEffect);
                 if (effect != null && effect.Lines > 0)
                     control.Lines = effect.Lines;
             }

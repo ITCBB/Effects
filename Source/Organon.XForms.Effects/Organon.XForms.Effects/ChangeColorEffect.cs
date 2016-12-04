@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Xamarin.Forms;
 
-namespace Organon.XForms.Effects
+namespace FormsCommunityToolkit.Effects
 {
     public static class ChangeColorEffect
     {

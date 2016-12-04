@@ -1,12 +1,12 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using Organon.XForms.Effects.iOS.Effects;
+using FormsCommunityToolkit.Effects.iOS.Effects;
 using UIKit;
 using Foundation;
 
 [assembly: ExportEffect(typeof(SizeFontToFitEffect), nameof(SizeFontToFitEffect))]
 
-namespace Organon.XForms.Effects.iOS.Effects
+namespace FormsCommunityToolkit.Effects.iOS.Effects
 {
     [Preserve(AllMembers = true)]
     public class SizeFontToFitEffect : PlatformEffect

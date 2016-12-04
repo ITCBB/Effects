@@ -4,12 +4,12 @@ using Windows.UI.Composition;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Hosting;
 using Microsoft.Graphics.Canvas.Effects;
-using Organon.XForms.Effects.UWP.Effects;
+using FormsCommunityToolkit.Effects.UWP.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.UWP;
 
 [assembly: ExportEffect(typeof(ViewBlurEffect), nameof(ViewBlurEffect))]
-namespace Organon.XForms.Effects.UWP.Effects
+namespace FormsCommunityToolkit.Effects.UWP.Effects
 {
     public class ViewBlurEffect : PlatformEffect
     {

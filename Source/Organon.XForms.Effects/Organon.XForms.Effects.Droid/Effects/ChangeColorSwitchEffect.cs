@@ -6,14 +6,14 @@ using Android.Graphics.Drawables;
 using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Widget;
-using Organon.XForms.Effects.Droid.Effects;
+using FormsCommunityToolkit.Effects.Droid.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Color = Xamarin.Forms.Color;
 using Switch = Android.Widget.Switch;
 
 [assembly: ExportEffect (typeof (ChangeColorSwitchEffect), nameof (ChangeColorSwitchEffect))]
-namespace Organon.XForms.Effects.Droid.Effects
+namespace FormsCommunityToolkit.Effects.Droid.Effects
 {
     /// <summary>
     /// http://stackoverflow.com/questions/11253512/change-on-color-of-a-switch

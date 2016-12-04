@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Organon.XForms.Effects
+namespace FormsCommunityToolkit.Effects
 {
     public class ClearEntryEffect : RoutingEffect
     {

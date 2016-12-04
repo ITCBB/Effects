@@ -1,12 +1,12 @@
 ﻿using Windows.UI.Xaml.Controls;
-using Organon.XForms.Effects.UWP.Effects;
+using FormsCommunityToolkit.Effects.UWP.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.UWP;
 using Thickness = Windows.UI.Xaml.Thickness;
 
 [assembly: ExportEffect(typeof(RemoveBorderEffect), nameof(RemoveBorderEffect))]
 
-namespace Organon.XForms.Effects.UWP.Effects
+namespace FormsCommunityToolkit.Effects.UWP.Effects
 {
     public class RemoveBorderEffect : PlatformEffect
     {

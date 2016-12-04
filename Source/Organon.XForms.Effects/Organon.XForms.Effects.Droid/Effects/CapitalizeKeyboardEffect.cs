@@ -2,13 +2,13 @@
 using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using Organon.XForms.Effects.Droid.Effects;
+using FormsCommunityToolkit.Effects.Droid.Effects;
 using Android.Runtime;
 using System.Linq;
 
 [assembly: ExportEffect(typeof(CapitalizeKeyboardEffect), nameof(CapitalizeKeyboardEffect))]
 
-namespace Organon.XForms.Effects.Droid.Effects
+namespace FormsCommunityToolkit.Effects.Droid.Effects
 {
     [Preserve(AllMembers = true)]
 	public class CapitalizeKeyboardEffect : PlatformEffect

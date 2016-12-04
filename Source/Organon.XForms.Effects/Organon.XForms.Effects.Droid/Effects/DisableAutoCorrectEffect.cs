@@ -1,12 +1,12 @@
 ﻿using System;
 using Android.Widget;
-using Organon.XForms.Effects.Droid.Effects;
+using FormsCommunityToolkit.Effects.Droid.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportEffect(typeof(DisableAutoCorrectEffect), nameof(DisableAutoCorrectEffect))]
 
-namespace Organon.XForms.Effects.Droid.Effects
+namespace FormsCommunityToolkit.Effects.Droid.Effects
 {
 	public class DisableAutoCorrectEffect : PlatformEffect
 	{

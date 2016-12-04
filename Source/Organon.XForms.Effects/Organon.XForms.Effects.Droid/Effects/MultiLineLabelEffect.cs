@@ -1,11 +1,11 @@
 using System.Linq;
 using Android.Widget;
-using Organon.XForms.Effects.Droid.Effects;
+using FormsCommunityToolkit.Effects.Droid.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportEffect(typeof(MultiLineLabelEffect), nameof(MultiLineLabelEffect))]
-namespace Organon.XForms.Effects.Droid.Effects
+namespace FormsCommunityToolkit.Effects.Droid.Effects
 {
     public class MultiLineLabelEffect : PlatformEffect
     {
@@ -15,7 +15,7 @@ namespace Organon.XForms.Effects.Droid.Effects
 
             if (control != null)
             {
-                var effect = (XForms.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is XForms.Effects.MultiLineLabelEffect);
+                var effect = (FormsCommunityToolkit.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is FormsCommunityToolkit.Effects.MultiLineLabelEffect);
                 if (effect != null && effect.Lines > 0)
                 {
                     control.SetSingleLine(false);
