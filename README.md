@@ -14,6 +14,7 @@ Included effects:
 | SizeFontToFitEffect | Shrinks fonts to fit | x | x | Todo |
 | MultiLineLabelEffect | Limit lines to given amount | x | x | x |
 | CustomFontEffect | Custom font for a Label | x | x | Todo |
+| ItalicPlaceholderEffect | Italicizes Placeholder of an Entry | x | Todo? | - |
 
 ###### iOS
 
