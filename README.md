@@ -15,6 +15,8 @@ Included effects:
 | MultiLineLabelEffect | Limit lines to given amount | x | x | x |
 | CustomFontEffect | Custom font for a Label | x | x | Todo |
 | ItalicPlaceholderEffect | Italicizes Placeholder of an Entry | x | Todo? | - |
+| SelectAllTextEntryEffect | Select text in an Entry when receive focus | x | x | - |
+
 
 ###### iOS
 
