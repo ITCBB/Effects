@@ -25,8 +25,8 @@
    <files>
       <!--Core-->
      <file src="src/FormsCommunityToolkit.Effects/FormsCommunityToolkit.Effects/bin/Release/FormsCommunityToolkit.Effects.dll" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/FormsCommunityToolkit.Effects.dll" />
-    <file src="src/FormsCommunityToolkit.Effects/FormsCommunityToolkit.Effects/bin/Release/FormsCommunityToolkit.Effects.pdb" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/FormsCommunityToolkit.Effects.pdb" />
-   <file src="src/FormsCommunityToolkit.Effects/FormsCommunityToolkit.Effects/bin/Release/FormsCommunityToolkit.Effects.xml" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/FormsCommunityToolkit.Effects.xml" />
+     <file src="src/FormsCommunityToolkit.Effects/FormsCommunityToolkit.Effects/bin/Release/FormsCommunityToolkit.Effects.pdb" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/FormsCommunityToolkit.Effects.pdb" />
+     <file src="src/FormsCommunityToolkit.Effects/FormsCommunityToolkit.Effects/bin/Release/FormsCommunityToolkit.Effects.xml" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/FormsCommunityToolkit.Effects.xml" />
 
      <!--Xamarin.Android-->
      <file src="src/FormsCommunityToolkit.Effects/FormsCommunityToolkit.Effects.Droid/bin/Release/FormsCommunityToolkit.Effects.Droid.dll" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.Droid.dll" />
