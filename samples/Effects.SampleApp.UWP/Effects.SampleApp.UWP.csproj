@@ -128,13 +128,13 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\FormsCommunityToolkit.Effects\FormsCommunityToolkit.Effects.UWP\FormsCommunityToolkit.Effects.UWP.csproj">
+    <ProjectReference Include="..\..\src\Effects.UWP\Effects.UWP.csproj">
       <Project>{98f91808-0410-4362-9b3a-bd5110beecde}</Project>
-      <Name>FormsCommunityToolkit.Effects.UWP</Name>
+      <Name>Effects.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\FormsCommunityToolkit.Effects\FormsCommunityToolkit.Effects\FormsCommunityToolkit.Effects.csproj">
+    <ProjectReference Include="..\..\src\Effects\Effects.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
-      <Name>FormsCommunityToolkit.Effects</Name>
+      <Name>Effects</Name>
     </ProjectReference>
     <ProjectReference Include="..\Effects.SampleApp\Effects.SampleApp.csproj">
       <Project>{FA490CC2-5633-4AA2-9242-FB3204BC3A00}</Project>
