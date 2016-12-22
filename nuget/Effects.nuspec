@@ -34,8 +34,8 @@
      <file src="src/Effects/bin/Release/FormsCommunityToolkit.Effects.pdb" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.pdb" />
      <file src="src/Effects/bin/Release/FormsCommunityToolkit.Effects.xml" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.xml" />
      <file src="src/Effects.Android/bin/Release/FormsCommunityToolkit.Effects.Android.dll" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.Android.dll" />
-     <file src="src/Effects.Android/bin/Release/FormsCommunityToolkit.Effects.Droid.pdb" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.Android.pdb" />
-     <file src="src/Effects.Android/bin/Release/FormsCommunityToolkit.Effects.Droid.xml" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.Android.xml" />
+     <file src="src/Effects.Android/bin/Release/FormsCommunityToolkit.Effects.Android.pdb" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.Android.pdb" />
+     <file src="src/Effects.Android/bin/Release/FormsCommunityToolkit.Effects.Android.xml" target="lib/MonoAndroid403/FormsCommunityToolkit.Effects.Android.xml" />
 
      <!--Xamarin.iOSUnified-->
      <file src="src/Effects/bin/Release/FormsCommunityToolkit.Effects.dll" target="lib/Xamarin.iOS10/FormsCommunityToolkit.Effects.dll" />
