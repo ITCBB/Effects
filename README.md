@@ -16,7 +16,7 @@ Included effects:
 | CustomFontEffect | Custom font for a Label | x | x | Todo |
 | ItalicPlaceholderEffect | Italicizes Placeholder of an Entry | x | Todo? | - |
 | SelectAllTextEntryEffect | Select text in an Entry when receive focus | x | x | x |
-| ChangeColorPickerEffect | Change colors of picker title | Todo | x | Todo |
+| ChangeColorPickerEffect | Change colors of picker title | x | x | Todo |
 
 ###### iOS
 
