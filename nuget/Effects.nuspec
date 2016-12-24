@@ -51,7 +51,5 @@
      <file src="src/Effects.UWP/bin/Release/FormsCommunityToolkit.Effects.UWP.dll" target="lib/UAP10/FormsCommunityToolkit.Effects.UWP.dll" />
      <file src="src/Effects.UWP/bin/Release/FormsCommunityToolkit.Effects.UWP.pdb" target="lib/UAP10/FormsCommunityToolkit.Effects.UWP.pdb" />
      <file src="src/Effects.UWP/bin/Release/FormsCommunityToolkit.Effects.UWP.xml" target="lib/UAP10/FormsCommunityToolkit.Effects.UWP.xml" />
-
-     <file src=".\src\**\*.cs" target="src" />
    </files>
 </package>
