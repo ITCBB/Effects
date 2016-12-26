@@ -19,7 +19,7 @@ namespace FormsCommunityToolkit.Effects.SampleApp.iOS
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
             Xamarin.Forms.Forms.Init();
-            FormsCommunityToolkit.Effects.iOS.iOSEffects.Init();
+            FormsCommunityToolkit.Effects.iOS.Effects.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(uiApplication, launchOptions);
