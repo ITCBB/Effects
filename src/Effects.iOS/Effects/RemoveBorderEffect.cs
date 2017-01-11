@@ -9,25 +9,27 @@ using Foundation;
 namespace FormsCommunityToolkit.Effects.iOS
 {
     [Preserve(AllMembers = true)]
-	public class RemoveBorderEffect : PlatformEffect
-	{
+    public class RemoveBorderEffect : PlatformEffect
+    {
         UITextBorderStyle old;
 
-		protected override void OnAttached()
-		{
+        protected override void OnAttached()
+        {
             var editText = Control as UITextField;
-			if (editText != null)
-			{
-                old = editText.BorderStyle;
-                editText.BorderStyle = UITextBorderStyle.None;
-			}
-		}
+            if (editText == null)
+                return;
 
-		protected override void OnDetached()
-		{
-			var editText = Control as UITextField;
-			if (editText != null)
-				editText.BorderStyle = old;
-		}
-	}
+            old = editText.BorderStyle;
+            editText.BorderStyle = UITextBorderStyle.None;
+        }
+
+        protected override void OnDetached()
+        {
+            var editText = Control as UITextField;
+            if (editText == null)
+                return;
+
+            editText.BorderStyle = old;
+        }
+    }
 }

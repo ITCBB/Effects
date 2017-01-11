@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using FormsCommunityToolkit.Effects.iOS;
 using UIKit;
@@ -16,22 +16,24 @@ namespace FormsCommunityToolkit.Effects.iOS
         {
             var control = Control as UILabel;
 
-            if (control != null)
-            {
-                initialeLines = control.Lines;
+            if (control == null)
+                return;
 
-                var effect = (FormsCommunityToolkit.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is FormsCommunityToolkit.Effects.MultiLineLabelEffect);
-                if (effect != null && effect.Lines > 0)
-                    control.Lines = effect.Lines;
-            }
+            initialeLines = control.Lines;
+
+            var effect = (FormsCommunityToolkit.Effects.MultiLineLabelEffect)Element.Effects.FirstOrDefault(item => item is FormsCommunityToolkit.Effects.MultiLineLabelEffect);
+            if (effect != null && effect.Lines > 0)
+                control.Lines = effect.Lines;
         }
 
         protected override void OnDetached()
         {
             var control = Control as UILabel;
 
-            if (control != null)
-                control.Lines = initialeLines;
+            if (control == null)
+                return;
+
+            control.Lines = initialeLines;
         }
     }
 }

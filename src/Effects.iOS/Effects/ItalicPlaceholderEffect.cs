@@ -16,21 +16,21 @@ namespace FormsCommunityToolkit.Effects.iOS
         protected override void OnAttached()
         {
             var entry = Control as UITextField;
-            if (entry != null && !string.IsNullOrWhiteSpace(entry.Placeholder))
-            {
-                old = entry.AttributedPlaceholder;
-                var entryFontSize = entry.Font.PointSize;
-                entry.AttributedPlaceholder = new NSAttributedString(entry.Placeholder, font: UIFont.ItalicSystemFontOfSize(entryFontSize));
-            }
+            if (entry == null || string.IsNullOrWhiteSpace(entry.Placeholder))
+                return;
+
+            old = entry.AttributedPlaceholder;
+            var entryFontSize = entry.Font.PointSize;
+            entry.AttributedPlaceholder = new NSAttributedString(entry.Placeholder, font: UIFont.ItalicSystemFontOfSize(entryFontSize));
         }
 
         protected override void OnDetached()
         {
             var entry = Control as UITextField;
-            if (entry != null)
-            {
-                entry.AttributedPlaceholder = old;
-            }
+            if (entry == null)
+                return;
+
+            entry.AttributedPlaceholder = old;
         }
     }
 }
