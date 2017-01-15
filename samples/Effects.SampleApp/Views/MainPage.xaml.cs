@@ -30,9 +30,9 @@ namespace FormsCommunityToolkit.Effects.SampleApp.Views
             Navigation.PushAsync(new LabelPage());
         }
 
-		private void OnSearchBarButtonClicked(object sender, EventArgs args)
-		{
-			Navigation.PushAsync(new SearchBarPage());
-		}
-	}
+        private void OnSearchBarButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new SearchBarPage());
+        }
+    }
 }
