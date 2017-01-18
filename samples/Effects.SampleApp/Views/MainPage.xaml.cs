@@ -34,5 +34,10 @@ namespace FormsCommunityToolkit.Effects.SampleApp.Views
         {
             Navigation.PushAsync(new SearchBarPage());
         }
+    
+        private void OnPickerButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new PickerPage());
+        }
     }
 }
