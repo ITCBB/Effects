@@ -1,4 +1,4 @@
-FormsCommunityToolkit library of Effects for Xamarin.Forms.
+### Please post your issues and pull requests on https://github.com/FormsCommunityToolkit/FormsCommunityToolkit, we're migrating all code and samples and closing this repo.
 
 Included effects:
 
